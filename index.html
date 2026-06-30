@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <h1><mark>Tudo quem tem comeco tem um fim na vida</mark></h1>
+    <h1><abbr title="Clean Boy">CB</abbr></h1>
+    <h1>Trabalhando com lista</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Escovar</li>
+        <li>Ir a Facul</li>
+    </ol>
+    <h2>Listas nao Ordenadas</h2>
+    <ul>
+        <li>pao</li>
+        <li>Tomate</li>
+        <li>Leite</li>
+        <li>Peixe</li>
+    </ul>
+    <h2>Coisas que eu mais gostos em mulheres</h2>
+    <ol>
+        <li>Negras</li>
+        <ol type="a">
+            <li>Seios</li>
+            <li>Bunda</li>
+            <li>Comportamento</li>
+        </ol>
+        <li>Mulatas</li>
+            <ol type="1">
+                <li>Clareza</li>
+                <li>Gentileza</li>
+            </ol>
+    </ol>
+    <h2>Jogos que mais joguei</h2>
+    <ol>
+        <li>PC</li>
+        <ul>
+            <li>GTA San Andreas</li>
+            <li>GTA 5</li>
+        </ul>
+            
+        <li>PS</li>
+        <ul>
+             <li>Fifa</li>
+            <li>Unchardet</li>
+        </ul>
+        <li>Xbox</li>
+        <ul>
+            <li>Naruto</li>
+            <li>Just Cause</li>
+        </ul>
+             
+    </ol>
+    <h1>Lista de Defenicoes</h1>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcacao para a criacao de conteudo de um site</dd>
+
+    </dl>
+    <h1>Usar links externos</h1>
+    <p>Clique aqui pra acessar <a href="https://youtube.com" target="_blank" rel="external">a pagina</a></p>
+    <h1>Link para Donwload</h1>
+    <ul>
+        <a href="Foto/Cheezy.JPG" download="Cheezy.JPG" type="application.JPG"> Baixar Foto</a>
+    </ul>
+
+    <div class="Cartao">
+        <div class="Cabecalho">
+            <img src="Cheezy.JPG" alt="Foto" class="minha-imagem">
+            <h2>Chelton Bione</h2> 
+            <p>Programador especializado</p>
+        </div>
+
+
+    <div class="grrid">
+        
+        <div class="Corpo">
+            <p>Aprendendo HTML, CSS e o JS do zero para fins lucrativos!</p>
+            <p>Ainda tou na fase inicial mas irei estudar cada vez mais</p>
+            <p>para poder ser um densenvolvedor web de verdade</p>
+
+        </div>
+        <div>
+            <P>cada Dia e bem dificil aprender</P>
+            <p>Mas desistir nao e a melhor opcao</p>
+            <p>A vida e uma posta mas temos que continuar lutando</p>
+        </div>
+
+        
+    </div>
+    <div>
+        <button type="button" onclick="myfunction()"> Clica aqui!</button>
+        <p id="demo"> Primeiro a gente tenta</p>
+    </div>
+
+    <script>
+        function myfunction(){
+            document.getElementById("demo").innerHTML=" So depois a gente consegue!";
+        }
+    </script>  
+    <div>
+        <ul class="paginacao">
+            <li><a href="#"><<</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a class="active" href="#">5</a></li>
+            <li><a class="disabled" href="#"> >> </a></li>
+        </ul>
+    </div> 
+
+    
+    <style>
+
+        .paginacao{
+            justify-content: center;
+            padding: 0px;
+            display: flex;
+            list-style: none;
+        
+        }
+        .paginacao li a{
+            padding: 8px 12px;
+            border: 1px solid ;
+            color: black;
+            margin: 0 4px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .paginacao li a .active{
+            background-color: #000000;
+            color: white;
+        }
+        .paginacao li a .disabled {
+            color: #dddddd;
+            cursor: not-allowed;
+            pointer-events: none;
+
+        }
+        .grrid{
+            width:100%;
+            overflow:auto;
+        }
+        .grrid div{
+            float: left;
+            width: 50%;
+
+        }
+        .cartao {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        .cabelhado{
+            background: #e8f0fe;
+            padding: 16px;
+            
+        
+
+        }
+        .tags{
+            display: flex;
+            gap: 8px;
+        }
+        .minha-imagem{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        body{
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #ff6b6b, #4ecdc4);
+        }
+        
+    </style>
+
+     
+     
+    
+</body>
+</html>

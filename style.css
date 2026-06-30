@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #F1D8C9, #f2c3a7);
+
+}
+main {
+    background-color: white;
+    border-radius: 10px;/* para colocar bordas arrendondadas */
+    box-shadow: 5px 5px 15px rgb(136, 109, 0.616);/* sombra da caixa */
+    width: 600px; /* Largura */
+    padding: 10px;
+    margin: auto;
+    gap: 16px;
+}
+.p {
+    color: #F1D8C9; /* para colocar cor do texto */
+    text-align: center; /* para centralizar o texto */
+    text-shadow: 1px 1px 2px black; /* para colocar sombra no texto */
+    font-style: italic; /* para colocar o texto em italico */
+    text-decoration: underline; /* para colocar o texto sublinhado */
+
+}
+h2 {
+    color: #125189;
+     /* shorthand font  1 font-style 2 font-weigth, 3 font-family*/
+
+}
+.principal {
+    text-align: right;
+}
+.we{
+    background-color: rgba(144, 75, 75, 0.676);
+
+}
+div {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px; /*altura */
+}
+div:hover { /* pseudo-classe representado por : e o hover e para mudar o estilo de algo
+    quando passamos o mouse por cima*/
+    background-color: aqua;
+}
+#passe:hover{
+    color: red;
+    
+}
+#passe > p {
+    display: none;
+}
+/*
+    # = id
+    . =  class
+    : = pseudo-class
+    :: = pseudo-element
+    > = filho
+ */
+#passe:hover > p {
+    display: block;
+}
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: darkviolet;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a::after {
+    content: ' [link]';
+    font-weight: normal;
+    color: blue;
+    text-decoration: none;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkslategray;
+    padding-top: 10px;
+    padding-right: 10px; /* distancia da borda pra dentro */
+}
